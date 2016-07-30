@@ -10,12 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // IBOutlets
     @IBOutlet weak var nombrePais: UILabel!
-    
     @IBOutlet weak var tipoHamburguesa: UILabel!
     
-    var objPaises = ColeccionDePaises()
-    var objHamburguesas = ColeccionDeHamburguesas()
+    // Instancias de clases
+    let objPaises = ColeccionDePaises()
+    let objHamburguesas = ColeccionDeHamburguesas()
+    
+    // Instancia de estructura
     let colores = Colores()
     
     override func viewDidLoad() {
@@ -28,6 +31,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // Acción del botón
     @IBAction func quieroUnaHamburguesa() {
         nombrePais.text = objPaises.obtenPais()
         tipoHamburguesa.text = objHamburguesas.obtenHamburguesa()
