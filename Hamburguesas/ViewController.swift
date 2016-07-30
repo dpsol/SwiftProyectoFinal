@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tipoHamburguesa: UILabel!
     
+    var objPaises = ColeccionDePaises()
+    var objHamburguesas = ColeccionDeHamburguesas()
+    let colores = Colores()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +29,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func quieroUnaHamburguesa() {
+        nombrePais.text = objPaises.obtenPais()
+        tipoHamburguesa.text = objHamburguesas.obtenHamburguesa()
+        
+        let colorAleatorio = colores.regresaColorAleatorio()
+        view.backgroundColor = colorAleatorio
+        view.tintColor = colorAleatorio
     }
 
 }
