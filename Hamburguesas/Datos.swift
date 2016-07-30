@@ -19,7 +19,7 @@ class ColeccionDePaises {
 }
 
 // Clase Hamburguesas
-class ColeccionDeHamburguesa {
+class ColeccionDeHamburguesas {
     let hamburguesas : [String] = ["Ternera", "Bacon", "Barbacoa", "Ranchera", "Roquefort", "Americana", "4 quesos", "Asturiana", "Al carbón", "Setas", "Doble", "A la parrilla", "Hawaiana", "Raza Nostra", "Cheeseburguer", "Steak Burguer", "A la leña", "Con tocino", "Azteca", "Provolone", "Chicken Burguer", "Fish Burguer", "Clásica"]
     
     // Método para obtener una hamburguesa aleatoria de la lista
